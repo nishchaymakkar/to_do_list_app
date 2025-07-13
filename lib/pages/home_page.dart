@@ -12,7 +12,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final _myBox = Hive.box('myBox');
+  final _myBox = Hive.box('mybox');
   ToDoDatabase db = ToDoDatabase();
   final _textController = TextEditingController();
   //list of todo tasks
@@ -76,8 +76,8 @@ class _HomePageState extends State<HomePage> {
           itemCount: db.toDoList.length,
           itemBuilder: (context, index) {
            return ToDoTile(
-             taskName: db.toDoList[index][1],
-             taskCompleted: db.toDoList[index][1] == true,
+             taskName: db.toDoList[index][0],
+             taskCompleted: db.toDoList[index][1],
              onChanged: (value) => checkBoxChanged(value,index),
              deleteFunction: (context) => deleteTask(index),
            );
