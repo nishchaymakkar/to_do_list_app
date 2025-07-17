@@ -1,16 +1,8 @@
 # to_do_list_app
 
-A new Flutter project.
+## ScreenShots
 
-## Getting Started
+<img src="https://github.com/user-attachments/assets/518215a9-b953-439c-bb47-e35b944f0b17" width="" alt="Home screen"/>
+<img src="https://github.com/user-attachments/assets/aab7518e-d9cc-4f03-9887-a2627598ce87" width="" alt="HAdd Task Dialog"/>
+<img src="" width="https://github.com/user-attachments/assets/b3abda2f-6bea-4d6d-82b6-7d5d43867669" alt="Delete the task"/>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
