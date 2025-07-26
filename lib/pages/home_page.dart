@@ -24,7 +24,12 @@ class _HomePageState extends State<HomePage> {
     });
     db.updateDataBase();
   }
-
+ void cancel(){
+    setState(() {
+     _textController.clear();
+    });
+    Navigator.of(context).pop();
+ }
   @override
   void initState() {
     if(_myBox.get("TODOLIST") == null){
@@ -47,7 +52,7 @@ class _HomePageState extends State<HomePage> {
     showDialog(context: context, builder: (context) {
       return DialogBox(
           controller: _textController,
-        onCancel: () => Navigator.of(context).pop(),
+        onCancel: cancel,
         onSave: saveNewTask,
       );
     },);
